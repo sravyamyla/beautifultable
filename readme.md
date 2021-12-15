@@ -1,6 +1,13 @@
 # beautifultable
 
-<img width="1417" alt="Ajax_Table" src="https://user-images.githubusercontent.com/90294460/145770668-c1edc1e7-cb0d-4acf-86cd-825704ad31aa.png">
-<img width="1423" alt="Basic_Table" src="https://user-images.githubusercontent.com/90294460/145770680-163e971e-2f29-4e20-b600-3f8bd3007743.png">
-<img width="1366" alt="Bootstrap_Table" src="https://user-images.githubusercontent.com/90294460/145770700-b13a737f-9cd9-49df-9c7f-36ec1d7bef6f.png">
-<img width="1421" alt="Server Driven Table" src="https://user-images.githubusercontent.com/90294460/145770710-09b4e299-50d2-4aaf-9953-b7e73b8d51e5.png">
+Home Page
+
+<img width="1429" alt="Screen Shot 2021-12-14 at 3 04 14 AM" src="https://user-images.githubusercontent.com/90294460/145957785-60809228-b917-4bdb-ad56-000cc9484e50.png">
+
+Layout Page
+
+<img width="1432" alt="Screen Shot 2021-12-14 at 3 00 09 AM" src="https://user-images.githubusercontent.com/90294460/145957847-cb6da787-e7ed-4851-b785-fa5067547767.png">
+
+Calculation Result Page
+
+<img width="1430" alt="Screen Shot 2021-12-14 at 3 04 57 AM" src="https://user-images.githubusercontent.com/90294460/145957904-bf9349e4-677f-40a9-a7c2-3da4b6bf6643.png">
