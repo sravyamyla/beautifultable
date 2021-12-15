@@ -2,12 +2,12 @@
 
 Home Page
 
-<img width="1429" alt="Screen Shot 2021-12-14 at 3 04 14 AM" src="https://user-images.githubusercontent.com/90294460/145957785-60809228-b917-4bdb-ad56-000cc9484e50.png">
+<img width="1426" alt="Screen Shot 2021-12-14 at 8 38 10 PM" src="https://user-images.githubusercontent.com/90294460/146119860-4fc78fe1-8edc-4501-b439-1fa71927675f.png">
 
 Layout Page
 
-<img width="1432" alt="Screen Shot 2021-12-14 at 3 00 09 AM" src="https://user-images.githubusercontent.com/90294460/145957847-cb6da787-e7ed-4851-b785-fa5067547767.png">
+<img width="1432" alt="Screen Shot 2021-12-14 at 8 38 45 PM" src="https://user-images.githubusercontent.com/90294460/146119876-bb17f3cb-d34d-452d-9dd4-dde7e43158eb.png">
 
 Calculation Result Page
 
-<img width="1430" alt="Screen Shot 2021-12-14 at 3 04 57 AM" src="https://user-images.githubusercontent.com/90294460/145957904-bf9349e4-677f-40a9-a7c2-3da4b6bf6643.png">
+<img width="1440" alt="Screen Shot 2021-12-14 at 10 40 27 PM" src="https://user-images.githubusercontent.com/90294460/146119836-0319a150-8514-47d4-9fe7-f0f622a591e8.png">
