@@ -7,6 +7,19 @@ navbar-brand>img {
     font-size:120%;
 
 }
+li{
+    text-align: left !important;
+}
+
+b
+{
+    text-align: left !important;
+}
+
+p
+{
+    text-align: left !important;
+}
 a.navbar-brand{
     color: #e8f4ff !important;
 }
