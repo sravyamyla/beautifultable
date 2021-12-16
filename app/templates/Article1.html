@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>OOP Principles</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Helvetica, sans-serif;
+        }
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            line-height: 2.5;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="container-fluid">
+    </br>
+    <h2><b>What is Object-Oriented Programming?</b></h2>
+    <p>Object-Oriented Programming is a widely popular programming paradigm. This method of structuring a program uses objects that have properties and behaviors. Each programming language handles the principles of OOP a little differently, so it’s important to learn OOP for each language you are learning. OOPS is a programming paradigm based on the creation of reusable objects that have their own properties and behavior that can be acted upon, manipulated, and bundled.
+        These objects package related data and behaviors into representations of real-life objects. It is widely used paradigm across various popular programming languages like Python, C++, and Java.
+    </p>
+    <p>Many developers use OOP because it makes your code reusable and logical, and it makes inheritance easier to implement. It follows the DRY principle, which makes programs much more efficient.
+        In OOP, every object is defined with its own properties. For example, say our object is an Employee. These properties could be their name, age, and role. OOP makes it easy to model real-world things and the relationships between them. Many beginners prefer to use OOP languages because they organize data much like how the human brain organizes information.
+    </p>
+    <p>The four main principles of OOP are <b>Encapsulation, Inheritance, Polymorphism and Abstraction.</b></p>
+    <div class="text-center">
+        </br>
+        <img class="img-responsive" src="images/oop.png" alt="OOP" width="500" height="300">
+        <p>Fig 1</p>
+    </div>
+
+    <h2><b>Encapsulation</b></h2>
+    <p>Encapsulation in Python describes the concept of bundling data and methods within a single unit. For example, when you create a class it means you are implementing encapsulation. A class is an example as it binds all the data members instance variables and methods into a single unit.</p>
+    <p> Using encapsulation, we can hide an object’s internal representation from the outside. This is called information hiding. Also, this allows us to restrict accessing variables and methods directly and prevent accidental data modification by creating private data members and methods within a class. It is a way to can restrict access to methods and variables from outside of class. Whenever we are working with the class and dealing with sensitive data, providing access to all variables used within the class is not a good choice.</p><br/>
+    <div class="text-center">
+        <img class="img-responsive" src="images/encapsulation.png" alt="Act" width="600" height="300">
+        <p>Fig 1.1</p>
+    </div>
+    <b>Real life example:</b>
+    <p>The common example of encapsulation is Capsule. In capsule all medicine are encapsulated in side capsule.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/en1.png" alt="Act" width="500" height="250">
+        <p>Fig 1.2</p>
+    </div>
+    <p>Automatic Cola Vending Machine:
+        Suppose you go to an automatic cola vending machine, when you request for a drink the machine will process your request and gives the selected drink. Here automatic vending machine is a class. It contains both data, Cola can and operations service mechanism. They are wrapped under a single unit Cola Vending Machine.
+        <br/></p>
+    <h4><b>What is the need for Encapsulation in Python</b></h4>
+    <p>The following reasons show why developers find the Encapsulation handy and why the Object-Oriented concept is outclassing many programming languages.</p>
+    <ol>
+        <li>Encapsulation helps in achieving the well-defined interaction in every application.</li>
+        <li>The Object-Oriented concept focuses on usability of code in Python.</li>
+        <li>The applications can be securely maintained.</li>
+        <li>It ensures the flexibility of the code through a proper code organization.</li>
+        <li>It promotes a smooth experience for the users without exposing any back-end complexities.</li>
+        <li>It improves the readability of the code. Any changes in one part of the code will not disturb another.</li>
+        <li>Encapsulation ensures data protection and avoids the access of data accidentally. The protected data can be accessed with the methods discussed above.</li>
+    </ol>
+    <p>Encapsulation in Python is, the data is hidden outside the object definition. It enables developers to develop user-friendly experience. This is also helpful in securing data from breaches, as the code is highly secured and cannot be accessed by outside sources.</p>
+
+    <h2><b>Inheritance</b></h2>
+    <p>The process of obtaining the data members and methods from one class to another class is known as inheritance. In other words, inheritance is a process by which a child class acquires all the properties and behaviors of the parent class.</p>
+    <p>The existing class is called parent class and the new class is called child class. The child class inherits data and behavior from the parent class.</p>
+    <div class="text-center">
+        <img class="img-responsive" src="images/Inheri.png" alt="Parent" width="600" height="350">
+        <p>Fig 2.1</p>
+    </div>
+
+    <h4><b>Basic Terminologies of Inheritance</b></h4>
+    <ol>
+        <li>In the inheritance the class which is give data members and methods is known as base or super or parent class.</li>
+        <li>The class which is taking the data members and methods is known as sub or derived or child class.</li>
+        <li>The data members and methods of a class are known as features.</li>
+        <li>The concept of inheritance is also known as re-usability or extendable classes or sub classing or derivation.</li>
+    </ol>
+
+    <b>Real Time example:</b>
+    <p>The example of inheritance is child and parents, all the properties of father are inherited by his son. Inheritance represents the IS-A relationship, also known as a parent-child relationship.</p>
+
+    <h4><b>Benefits of Inheritance</b></h4>
+    <p>If we develop any application using this concept, the application will have the following benefits:</p>
+    <ol>
+        <li>It is easy to develop an application with respect to time.</li>
+        <li>Consumes less memory while creating a website</li>
+        <li>High performance application is the result of inheritance</li>
+        <li>Execution time is less</li>
+        <li>Redundancy of the code is reduced or minimized so that we get consistence results and less storage cost.</li>
+    </ol>
+    <div class="text-center">
+        <img class="img-responsive" src="images/child.png" alt="Child" width="600" height="250">
+        <p>Fig 2.2</p>
+    </div>
+    </br>
+
+
+    <h2><b>Polymorphism:</b></h2>
+    <p>Polymorphism allows different classes to have methods with the same name. We can then later generalize calling these methods by disregarding the object we are working on. Like in other programming languages, the child classes in Python also inherit methods and attributes from the parent class. We can redefine certain methods and attributes specifically to fit the child class, which is known as Method Overriding. This allows to access these overridden methods and attributes that have the same name as the parent class.</p>
+    <div class="text-center">
+        </br>
+        <img class="img-responsive" src="images/poly.png" alt="poly" width="600" height="300">
+        <p>Fig 3.1</p>
+    </div>
+
+
+
+    <h2><b>Abstraction:</b></h2>
+    <p>In Python, Abstraction is the concept of object-oriented programming that "shows" only essential attributes and hides unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.</p>
+    <p>Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts. It is one of the most important concepts of OOPs. Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviours of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.</p>
+    <div class="text-center">
+        </br>
+        <img class="img-responsive" src="images/ACP.png" alt="abstraction" width="600" height="300">
+        <p>Fig 3.1</p>
+    </div>
+    <b>Real Time Example:</b>
+    <p>Suppose you are operating a mobile phone. You know that the important feature of a phone is the memory card, SIM, battery life, design and build, and processor power. But while operating the phone you do not get into the operational details of the phone such as how the CPU of the phone allocates memory for the various media on your phone or other intricate architectural details of the phone. All these details are not visible to cell-phone users from a non-technical background.</p>
+    <h4><b>Advantages of Abstraction</b></h4>
+    <ol>
+        <li>It reduces the complexity of viewing the things.</li>
+        <li>Prevents from duplicate code and increases re-usability.</li>
+        <li>It helps in increasing the security of an application or a program as we only give important details to the user.</li>
+    </ol>
+</div>
+</body>
+</html>
+
+{% endblock %}

@@ -1,10 +1,32 @@
-.navbar-brand>img {
+navbar-brand>img {
     height: 85%;
 }
 
 .navbar{
     margin : 0 !important;
     font-size:120%;
+
+}
+a.navbar-brand{
+    color: #e8f4ff !important;
+}
+
+nav.navbar.container-fluid.navbar-expand-lg.navbar-toggle.bg-dark
+{
+    background-color: black;
+}
+h4.important
+{
+    margin-top: 10%;
+}
+
+a.text-lead
+{
+color: #e8f4ff !important;
+}
+
+a.nav-link{
+    color: #e8f4ff !important;
 }
 
 .navbar-fixed-top{
@@ -35,6 +57,7 @@
     .navbar-nav {
         float: none!important;
         margin-top: 7.5px;
+
     }
     .navbar-nav>li {
         float: none;
@@ -49,6 +72,12 @@
     }
 }
 
+img
+{
+    height: 30px;
+
+}
+
 canvas {
     display: block;
     vertical-align: bottom;
@@ -56,9 +85,14 @@ canvas {
 
 a {
     text-decoration: none;
-    color: #FFF;
+    color: #b61924 !important;
+
 }
 
+p.text-white
+{
+    background-color: #1e1e1e;
+}
 a:hover {
     color: lightblue;
 }
@@ -69,6 +103,7 @@ html,body{
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 100vh;
+    background-color: #d2f2d2;
 }
 
 
@@ -120,7 +155,9 @@ html,body{
 .title-form {
     max-width: 550px;
 }
-#content, #founder-content, #arpa2inter-content, #origin-content, #aboutus-content, #growth-content, #article1-content, #article2-content, #article3-content, #article4-content{
+#content, #founder-content, #arpa2inter-content, #origin-content, #aboutus-content, #growth-content, #article1-content, #article2-content, #article3-content, #article4-content
+{
+    background-color: #d2f2d2;
     padding-top:50px;
     flex-grow: 1;
 }
