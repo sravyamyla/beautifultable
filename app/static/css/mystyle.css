@@ -10,7 +10,10 @@ navbar-brand>img {
 li{
     text-align: left !important;
 }
-
+p.text-white, small
+{
+    text-align: center !important;
+}
 b
 {
     text-align: left !important;
@@ -85,11 +88,7 @@ a.nav-link{
     }
 }
 
-img
-{
-    height: 30px;
 
-}
 
 canvas {
     display: block;

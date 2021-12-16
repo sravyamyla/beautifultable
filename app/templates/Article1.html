@@ -15,24 +15,11 @@
             background-color: #e3f2fd;
             font-family: Helvetica, sans-serif;
         }
-        .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
-            background-color: grey;
-            color: white;
-            text-align: center;
-            line-height: 2.5;
-        }
+
     </style>
-
-
 </head>
 <body>
 <div class="container-fluid">
-    </br>
     <h2><b>What is Object-Oriented Programming?</b></h2>
     <p>Object-Oriented Programming is a widely popular programming paradigm. This method of structuring a program uses objects that have properties and behaviors. Each programming language handles the principles of OOP a little differently, so it’s important to learn OOP for each language you are learning. OOPS is a programming paradigm based on the creation of reusable objects that have their own properties and behavior that can be acted upon, manipulated, and bundled.
         These objects package related data and behaviors into representations of real-life objects. It is widely used paradigm across various popular programming languages like Python, C++, and Java.
@@ -43,22 +30,18 @@
     <p>The four main principles of OOP are <b>Encapsulation, Inheritance, Polymorphism and Abstraction.</b></p>
     <div class="text-center">
         </br>
-        <img class="img-responsive" src="../../images/oop.png" alt="OOP" width="500" height="300">
-        <p>Fig 1</p>
-    </div>
+        <div class="text-center">
+
 
     <h2><b>Encapsulation</b></h2>
     <p>Encapsulation in Python describes the concept of bundling data and methods within a single unit. For example, when you create a class it means you are implementing encapsulation. A class is an example as it binds all the data members instance variables and methods into a single unit.</p>
     <p> Using encapsulation, we can hide an object’s internal representation from the outside. This is called information hiding. Also, this allows us to restrict accessing variables and methods directly and prevent accidental data modification by creating private data members and methods within a class. It is a way to can restrict access to methods and variables from outside of class. Whenever we are working with the class and dealing with sensitive data, providing access to all variables used within the class is not a good choice.</p><br/>
     <div class="text-center">
-        <img class="img-responsive" src="../../images/encapsulation.png" alt="Act" width="600" height="300">
-        <p>Fig 1.1</p>
     </div>
     <b>Real life example:</b>
     <p>The common example of encapsulation is Capsule. In capsule all medicine are encapsulated in side capsule.</p>
     <div class="text-center">
-        <img class="img-responsive" src="../../images/en1.png" alt="Act" width="500" height="250">
-        <p>Fig 1.2</p>
+            <img src="{{ url_for('static', filename='images/en1.png') }}" alt="oop" width="700" height="250">
     </div>
     <p>Automatic Cola Vending Machine:
         Suppose you go to an automatic cola vending machine, when you request for a drink the machine will process your request and gives the selected drink. Here automatic vending machine is a class. It contains both data, Cola can and operations service mechanism. They are wrapped under a single unit Cola Vending Machine.
@@ -80,8 +63,6 @@
     <p>The process of obtaining the data members and methods from one class to another class is known as inheritance. In other words, inheritance is a process by which a child class acquires all the properties and behaviors of the parent class.</p>
     <p>The existing class is called parent class and the new class is called child class. The child class inherits data and behavior from the parent class.</p>
     <div class="text-center">
-        <img class="img-responsive" src="../../images/Inheri.png" alt="Parent" width="600" height="350">
-        <p>Fig 2.1</p>
     </div>
 
     <h4><b>Basic Terminologies of Inheritance</b></h4>
@@ -105,8 +86,7 @@
         <li>Redundancy of the code is reduced or minimized so that we get consistence results and less storage cost.</li>
     </ol>
     <div class="text-center">
-        <img class="img-responsive" src="../../images/child.png" alt="Child" width="600" height="250">
-        <p>Fig 2.2</p>
+            <img src="{{ url_for('static', filename='images/child.png') }}" alt="oop" width="700" height="250">
     </div>
     </br>
 
@@ -115,8 +95,6 @@
     <p>Polymorphism allows different classes to have methods with the same name. We can then later generalize calling these methods by disregarding the object we are working on. Like in other programming languages, the child classes in Python also inherit methods and attributes from the parent class. We can redefine certain methods and attributes specifically to fit the child class, which is known as Method Overriding. This allows to access these overridden methods and attributes that have the same name as the parent class.</p>
     <div class="text-center">
         </br>
-        <img class="img-responsive" src="../../images/poly.png" alt="poly" width="600" height="300">
-        <p>Fig 3.1</p>
     </div>
 
 
@@ -126,8 +104,6 @@
     <p>Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts. It is one of the most important concepts of OOPs. Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviours of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.</p>
     <div class="text-center">
         </br>
-        <img class="img-responsive" src="../../images/ACP.png" alt="abstraction" width="600" height="300">
-        <p>Fig 3.1</p>
     </div>
     <b>Real Time Example:</b>
     <p>Suppose you are operating a mobile phone. You know that the important feature of a phone is the memory card, SIM, battery life, design and build, and processor power. But while operating the phone you do not get into the operational details of the phone such as how the CPU of the phone allocates memory for the various media on your phone or other intricate architectural details of the phone. All these details are not visible to cell-phone users from a non-technical background.</p>
