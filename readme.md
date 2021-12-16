@@ -10,4 +10,4 @@ Layout Page
 
 Calculation Result Page
 
-<img width="1440" alt="Screen Shot 2021-12-14 at 10 40 27 PM" src="https://user-images.githubusercontent.com/90294460/146119836-0319a150-8514-47d4-9fe7-f0f622a591e8.png">
+<img width="1435" alt="Screen Shot 2021-12-15 at 1 51 50 PM" src="https://user-images.githubusercontent.com/90294460/146247461-8929290a-08ed-4ee1-95d2-c98e20bba81e.png">

@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contributors</title>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Helvetica, sans-serif;
+        }
+
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            color:#000000;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            color:#000000;
+        }
+
+        /* Container around content */
+        .container {
+            padding: 0px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            color:#000000;
+        }
+
+
+        /* The circles on the timeline */
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 0px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .left {
+            left: -24%;
+        }
+
+        /* Place the container to the right */
+        .right {
+            left: 25.28%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .right::after {
+            left: -16px;
+        }
+
+        /* The actual content */
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+            /* Place the timelime to the left */
+            .timeline::after {
+                left: 31px;
+            }
+
+            /* Full-width containers */
+            .container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left::after, .right::after {
+                left: 15px;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right {
+                left: 0%;
+            }
+        }
+
+
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background-color: grey;
+            color: white;
+            text-align: center;
+            line-height: 2.5;
+        }
+
+        .img-size{
+            width: 200px;
+            height: 200px;
+
+
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="timeline">
+    <div class="container left">
+        <div class="content">
+            <h2>Dwight D Eisenhower</h2>
+            <img src="images/1.png" alt="Dwight D Eisenhower" class="img-size">
+            <p class="lead">Created DARPA to sort out and organize competing American missile and space projects and to delineate boundaries separating military from civilian space research. </p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>Paul Baran</h2>
+            <img src="images/7.png" alt="Paul Baran" class="img-size">
+            <p class="lead">He invented packet switching techniques that can be credited with playing a key role in the development of the Internet.</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h2>Steve Wozniak</h2>
+            <img src="images/5.png" alt="Steve Wozniak" class="img-size">
+            <p class="lead">Steve Wozniak is an American pioneer of the personal computer revolution of the 1970s, and the mind behind Apple's first computer. As an inventor, electronics engineer, and computer programmer, Wozniak invented the Apple I computer in partnership with Steve Jobs. </p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>Al Gore</h2>
+            <img src="images/6.png" alt="Al Gore" class="img-size">
+            <p class="lead">Al Gore is a former US Senator who served as the Vice President of the United States from 1993 to 2001. In the 1980s and 1990s, he promoted legislation that funded an expansion of the ARPANET, allowing greater public access, and helping to develop the Internet.</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h2>Tim Berners Lee</h2>
+            <img src="images/7.png" alt="Tim Berners Lee" class="img-size">
+            <p class="lead">Tim Berners-Lee invented the World Wide Web, an Internet-based hypermedia initiative for global information sharing while at CERN, the European Particle Physics Laboratory. He wrote the first web client and server in 1990. His specifications of URIs, HTTP and HTML were refined as web technology spread. </p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>Robert Metcalfe</h2>
+            <img src="images/8.png" alt="Robert Metcalfe" class="img-size">
+            <p class="lead">Metcalfe helped pioneer the Internet. In 1973, at the Xerox Palo Alto Research Center, he invented Ethernet, the local-area networking (LAN) standard Internet plumbing also invented Ethernet.</p>
+        </div>
+    </div>
+
+
+    <br></br>
+</div>
+
+</body>
+</html>
+
+{% endblock %}
+
+
