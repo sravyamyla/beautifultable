@@ -1,23 +1,19 @@
 {% extends "base.html" %}
-{% block title %}
+{% block title %}{% endblock %}
 Basic Form
-{% endblock %}
-
 {% block content %}
 
-
-<h1>HTML Form</h1>
-
+<h3> Calculator Program </h3>
+</br>
 <div class="container-fluid">
 
-
     <form action="basicform" autocomplete="off" method="POST">
-        <label for="value1">Value 1:</label>
+        <label for="value1">Integer 1:</label>
         <input id="value1" name="value1" placeholder="Enter an integer" type="text"><br/><br/>
-        <label for="value2">Value 2:</label>
+        <label for="value2">Integer 2:</label>
         <input id="value2" name="value2" placeholder="Enter an integer" type="text"><br/><br/>
         <fieldset>
-            <legend>Calculator Operations</legend>
+            <h3>Calculator Operations</h3>
             <div>
                 <input checked id="addition" name="operation" type="radio" value="addition">
                 <label for="addition">Addition</label>
@@ -35,7 +31,6 @@ Basic Form
                 <label for="division">Division</label>
             </div>
         </fieldset>
-
         <input type="submit" value="Submit">
     </form>
 </div>

@@ -1,113 +1,57 @@
 {% extends "base.html" %}
 {% block title %}Index{% endblock %}
 {% block content %}
-
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-    <!-- meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>OOP Principles</title>
     <style>
         body {
-            background-color: #e3f2fd;
-            font-family: Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
-            background-color: grey;
-            color: white;
-            text-align: center;
-            line-height: 2.5;
-        }
+
     </style>
-
-
+    <title>Document</title>
 </head>
 <body>
-<div class="container-fluid">
-    </br>
-    <h2><b>What is S.O.L.I.D</b></h2>
-    <p>SOLID is an acronym for the first five principles of the article Principles of Object-Oriented Design by Robert C. Martin. Applying these principles helps to develop maintainable and extensible code. They also help to catch code smells, refactor code easily, and practice a good agile development.</p>
-    <p> S stands for SRP - Single Responsibility Principle </br>
-        O stands for OCP - Open-Closed Principle </br>
-        L stands for LSP - Liskov Substitution Principle </br>
-        I stands for ISP - Interface Segregation Principle </br>
-        D stands for DIP - Dependency Inversion Principle</p>
-    </br>
-    <div class="text-center">
-        <img class="img-responsive" src="solid.png" alt="Act" width="700" height="300">
-        <p>Fig. 1</p>
-    </div>
 
-    <h3><b>Single Responsibility Principle</b></h3>
-    <p>This principle means that an entity should do only one thing. So single responsibility denotes some work in isolation. If we have a software entity that performs some calculations the only reason to change it is if these calculations need to change, Single Responsibility Principle requires that a class should have only one job. So if a class has more than one responsibility, it becomes coupled. A change to one responsibility results to modification of the other responsibility.<br/></p>
-    <p>We have a User class which is responsible for both the user properties and user database management. If the application changes in a way that it affect database management functions. The classes that make use of User properties will have to be touched and recompiled to compensate for the new changes. It’s like a domino effect, touch one card it affects all other cards in line.</p>
-    <div class="text-center">
-        <img class="img-responsive" src="../../images/SRP.png" alt="Act" width="700" height="300">
-        <p>Fig. 1.1</p>
-    </div>
-    </br>
-
-    <h3><b>Open Closed Principle</b></h3>
-    <p>If you are not modifying the existing code, you know you aren’t breaking any of it. All the new functionality is contained in the newly added functions or classes.
-        The hardest part about this principle is recognizing when it can be applied before you begin coding. Here are a couple of guidelines to help you recognize when open/closed may be applicable.</br></p>
-    <ol>
-        <li>When you have algorithms that perform a calculation (cost, tax, game score, etc.): the algorithm will likely change over time. </li>
-        <li>When you have data coming or going from the system: the endpoint (file, database, another system) is likely to change. So is the actual format of the data. </li>
-    </ol>
-    <div class="text-center">
-        <img class="img-responsive" src="../../images/OCP.png" alt="Act" width="700" height="300">
-        <p>Fig. 1.2</p>
-    </div>
-    </br>
-
-    <h3><b>Liskov Substitution Principle</b></h3>
-    <p> What this principle means is that objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program. So if you pass a subclass of an abstraction you need to make sure you don’t alter any behavior or state semantics of the parent abstraction.</br></p>
-
-    <div class="text-center">
-        <img class="img-responsive" src="../../images/LSP.png" alt="Act" width="700" height="300">
-        <p>Fig. 1.3</p>
-    </div>
-    </br>
-    <h3><b>Interface Segregation Principle</b></h3>
-    <p>This principle is the first principle that applies to Interfaces instead of classes in SOLID and it is similar to the single responsibility principle. It states that “do not force any client to implement an interface which is irrelevant to them“. Here your main goal is to focus on avoiding fat interface and give preference to many small client-specific interfaces. You should prefer many client interfaces rather than one general interface and each interface should have a specific responsibility.</p>
-    <p>Suppose if you enter a restaurant you are pure vegetarian. The waiter in that restaurant gave you the menu card which includes vegetarian items, non-vegetarian items, drinks, and sweets. In this case, as a customer, you should have a menu card which includes only vegetarian items, not everything which you don’t eat in your food. Here the menu should be different for different types of customers. The common or general menu card for everyone can be divided into multiple cards instead of just one. Using this principle helps in reducing the side effects and frequency of required changes.</p>
-    </br>
-    <div class="text-center">
-        <img class="img-responsive" src="../../images/ISP.png" alt="Act" width="700" height="300">
-        <p>Fig. 1.4</p>
-    </div>
-    </br>
-
-    <P>Both images above are formed from the same number of pixels, but while one looks like a bear, the other one looks more like a shocked square. It is not a difference of quantity, but one of granularity. It is easier to compose something with smaller pieces.
-        The same logic can be applied to writing good, resilient code. Client code shouldn’t be forced to implement methods that it doesn’t use. This is the Interface Segregation Principle as defined by Robert C. Martin.</P>
-    <h4><b>Dependency Inversion Principle</b></h4>
-    <p>This principle states that High-level modules which provide complex logic should be easily reusable and unaffected by changes in low-level modules, which provide utility features. To achieve that you need to introduce an abstraction that decouples the high level and low level modules from each other.</p>
-    <p> Based on this idea, Robert C. Martin’s definition of the Dependency Inversion Principle consists of two parts: </br></p>
-    <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
-    <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
-    </br>
-    <div class="text-center">
-        <img class="img-responsive" src="../../images/DIP.png" alt="Act" width="700" height="300">
-        <p>Fig. 1.5</p>
-    </div>
-
-    <p>An important detail of this definition is, that high-level and low-level modules depend on the abstraction. The design principle does not just change the direction of the dependency, as you might have expected when you read its name for the first time. It splits the dependency between the high level and low level modules by introducing an abstraction between them. So in the end, you get two dependencies: </br></p>
-    <li>High level module depends on the abstraction.</li>
-    <li>Low level depends on the same abstraction.</li>
-</div>
-</br>
+<p> <h1> <b> ARTICLE 3 </b> </h1> </p>
+<p> POLYMORPHISM </p>
+<p> Polymorphism is the ability to take on multiple identities. In Python, polymorphism allows us to define methods in a child class that have the same name as those in the parent class. A child class inherits all of the parent class's methods. However, in some cases, the parent class's inherited function does not fully fit within the child class. You'll have to re-implement the method in the child class in such circumstances. Polymorphism can be used in Python in a variety of ways. Polymorphism can be defined using a variety of functions, class methods, and objects. So, let's take a closer look at each of these strategies individually. In the same way, Python uses two separate class types. You must design a for loop that iterates through a tuple of items in this case. After that, you must call the methods without regard for the class type of each object. In Python, polymorphism defines methods in the child class that have the same name as the parent class's methods. In inheritance, the methods of the parent class are passed down to the child class. It's also feasible to change a method that a child class has inherited from its parent.
+This is typically used when a method inherited from the parent class isn't appropriate for the child class. Method Overriding is the process of re-implementing a method in a child class.
+In our calculator application, we have a class called Calculator that has five methods with a pre-fixed outcome of 0 and four distinct variables in four separate methods that will provide the necessary output.
+</p>
+<p> Class Calculator: <br> def get_result(self): <br> return self.result <br> def add_number(self, value_a): <br>
+self.result = self.result+value_a <br> return self.result</p>
+<p> In the calculator program the method add has a prefixed result 0 and it performs the addition function to give the desired output. Same applies to the different methods with the different variabls which will give the desired output.</p>
+<p> ENCAPSULATION</p>
+<p>In Python, encapsulation refers to the principle of grouping data and methods into a single unit. When you construct a class, for instance, you are implementing encapsulation. Encapsulation is demonstrated by a class, which binds all data members (instance variables) and methods into a single unit. Encapsulation also allows us to create private data members and methods within a class to restrict direct access to variables and methods and prevent unintentional data alteration.
+Encapsulation is a technique for limiting outside access to a class's methods and variables. Providing access to all variables utilized within the class is not a good idea whenever we are working with the class and dealing with sensitive data. Encapsulation is accomplished by defining a class's data members and methods as private or protected. However, direct access modifiers such as public, private, and protected do not exist in Python. We may accomplish this by employing single and double underscores. Access modifiers restrict access to a class's variables and methods. Private, public, and protected are the three types of access modifiers available in Python. Member of the Public: Outside of class, it's accessible from anyplace. Accessible only to members of the class is private. Accessible within the class and its sub-classes as a protected member.
+It discusses the concept of data wrapping and the methods that operate with data as a single unit. This prevents data from being accidentally modified by restricting direct access to variables and methods. An object's variable can only be altered by an object's method to prevent unintentional changes. These variables are referred to as private variables. The variable result is declared in the function with the object self and is made private in the program.
+</p>
+<p> class calculation: <br> def_init_(self, value_a, value_b): <br> self._value_a=value_a <br> self._value_b = value_b <br>
+def create (cls, value_a, value_b): <br> def value_a(self): <br> return self._value_a <br> def value_b(self): <br> return self._value_b </p>
+<p> ABSTRACTION </p>
+<p> Abstraction is a technique for concealing a function's internal functionality from its users. Users only interact with the function's basic implementation; the inner workings are hidden. The user understands "what the function does," but not "how it works." Abstract classes and interfaces are used to accomplish abstraction in Python.
+The abstract class is a type of class that contains one or more abstract methods. The implementation of abstract methods is not included. Subclasses can inherit abstract classes, and abstract methods are defined in the subclass. Abstraction classes serve as a model for additional classes. When developing large functions, an abstract class can be handy. An abstract class can also be useful for providing a consistent interface for multiple component implementations. The abc module in Python allows you to employ abstraction in your Python program. An abstract base class is the interface's common application program for a group of subclasses. It can be used by a third party to offer implementations, such as using plugins. It's particularly useful when working with a huge code base when remembering all the classes is difficult. Abstraction is a technique for concealing a function's internal functionality from its users. Users only interact with the function's basic implementation; the inner workings are hidden.
+The results of the variables of classes addition, subtraction, multiplication, and division are obtained from the variables used in class computation in the calculator software.
+</p>
+<p> class addition(calculation): <br> def get_result(self): <br> return self.value_a + self.value_b</p>
+<p> In the caluclator program the result of the variables of class addition is derived from the variables used in class calculation. Same applies to subtraction, division and multiplication</p>
+<p> INHERITANCE </p>
+<p> If inheritance wasn't supported, no object-oriented programming language would be worth looking at or using. Simula came up with the concept of inheritance in 1969. Python not only allows for inheritance, but also multiple inheritance. In general, inheritance refers to the process of creating new classes from existing ones. As a result, we have a hierarchy of classes. In most class-based object-oriented languages, an object generated through inheritance (a "child object") inherits all of the parent object's characteristics and actions, with certain exceptions in some computer languages.
+Inheritance allows programmers to construct classes that are based on other classes, allowing a class created through inheritance to inherit the parent class's attributes and methods. As a result, inheritance facilitates code reuse. A subclass's inherited methods, or software in general, are regarded to be reused in the subclass. A directed graph is formed by the inheritance of relationships between items or classes.
+The parent or superclass of a class is the class from which it inherits. A subclass, also known as an heir class or a kid class, is a class that inherits from a superclass. Superclasses are also referred to as ancestors. Between classes, there is a hierarchical relationship. It's akin to the relationships and categorizations we're familiar with in real life. Take, for example, automobiles. Vehicles include bicycles, automobiles, buses, and trucks. Pickup trucks, vans, sports cars, convertibles, and estate cars are all automobiles that are also vehicles. In Python, we may create a car class with methods such as accelerate and brake. Cars, buses, trucks, and bikes can all be constructed as subclasses of vehicle, inheriting these methods.
+As a result of inheritance, a class calculator has methods such as add number, subtract number, multiply number, and divide number, which are represented by the classes addition, subtraction, multiplication, and division.This indicates that the subclasses of the class calculator are addition, subtraction, multiplication, and division.
+</p>
+<p> Class Calculator: <br> def get_result(self): <br> return self.result <br> def add_number(self, value_a): <br>
+self.result = self.result+value_a <br> return self.result</p>
+<p> In the class calculator the method to add a number is depicted from the class addition, which implies the clas addition is the subclass
+of the class calculator. The same applies to subtraction, multiplication and division</p>
 
 
 </body>
 </html>
 
 {% endblock %}
-

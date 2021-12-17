@@ -1,45 +1,48 @@
-navbar-brand>img {
+.navbar-brand>img {
     height: 85%;
 }
-
-.navbar{
-    margin : 0 !important;
-    font-size:120%;
-
+a.navbar-brand{
+    color: #00dd00 !important;
 }
-li{
-    text-align: left !important;
-}
-
-b
-{
-    text-align: left !important;
-}
-
 p
 {
     text-align: left !important;
 }
-a.navbar-brand{
-    color: #e8f4ff !important;
+p.text-white
+{
+    text-align: center !important;
 }
-
+.navbar{
+    margin : 0 !important;
+    font-size:120%;
+}
 nav.navbar.container-fluid.navbar-expand-lg.navbar-toggle.bg-dark
 {
-    background-color: black;
-}
-h4.important
-{
-    margin-top: 10%;
+    color: black !important;
 }
 
-a.text-lead
+div#primary_container
 {
-color: #e8f4ff !important;
+    background-color: #888888 !important;
 }
 
-a.nav-link{
-    color: #e8f4ff !important;
+a.navbar-brand
+{
+    color: white !important;
+}
+body
+{
+    background-color: #888888 !important;
+}
+
+div#content.container-fluid
+{
+    color: black !important;
+    background-color: beige;
+}
+
+.nav-link{
+    color: #00dd00 !important;
 }
 
 .navbar-fixed-top{
@@ -67,28 +70,31 @@ a.nav-link{
     .navbar-collapse.collapse {
         display: none!important;
     }
+
+    td.gaya
+    {
+    color: #0f3a42;
+    }
     .navbar-nav {
         float: none!important;
-        margin-top: 7.5px;
-
+        margin-top: 8.5px;
     }
     .navbar-nav>li {
         float: none;
+
+    }
+    .table-striped{
+        color: #00dd00;
     }
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+        color: #00dd00;
     }
     .collapse.in{
         display:block !important;
         background-color: #FFFFFF;
     }
-}
-
-img
-{
-    height: 30px;
-
 }
 
 canvas {
@@ -98,14 +104,9 @@ canvas {
 
 a {
     text-decoration: none;
-    color: #b61924 !important;
-
+    color: #00dd00 !important;
 }
 
-p.text-white
-{
-    background-color: #1e1e1e;
-}
 a:hover {
     color: lightblue;
 }
@@ -116,10 +117,14 @@ html,body{
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 100vh;
-    background-color: #d2f2d2;
+    background-color: #1e1e1e;
 }
 
-
+p.b1, p.b2
+{
+background-color: black !important;
+    color: #00dd00;
+}
 .jumbotron {
     color: white;
     background-image: url("https://www.wallpapertip.com/wmimgs/12-123097_internet-wallpaper-hd.jpg");
@@ -132,6 +137,10 @@ html,body{
     margin : 0 !important;
 }
 
+article.subHistory
+{
+    background-color: black !important;
+}
 #particles-js {
     position: absolute;
     width: 100%;
@@ -146,7 +155,10 @@ html,body{
     background-color: #000;
     opacity: 0.7;
 }
+.table-striped{
+    color: #00dd00;
 
+}
 #overlay {
     position: absolute;
     top:50%;
@@ -168,11 +180,15 @@ html,body{
 .title-form {
     max-width: 550px;
 }
-#content, #founder-content, #arpa2inter-content, #origin-content, #aboutus-content, #growth-content, #article1-content, #article2-content, #article3-content, #article4-content
-{
-    background-color: #d2f2d2;
+#content, #founder-content, #arpa2inter-content, #origin-content, #aboutus-content, #growth-content, #article1-content, #article2-content, #article3-content, #article4-content{
     padding-top:50px;
     flex-grow: 1;
+    color: #00dd00 !important;
+    background-color: #1e1e1e;
+}
+
+#data>tr>td{
+    color:white;
 }
 
 .title-form {
@@ -187,11 +203,22 @@ html,body{
 }
 
 /*Arpa2Internet*/
-.heading3{
+.heading3 {
     text-align: center;
-
 }
-
+td
+{
+    color: black;
+}
+.tbody, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    color: white;
+}
+.gaya{
+    color: #00dd00!important;
+}
 #paper_link{
     color:inherit;
 }
@@ -218,6 +245,7 @@ html,body{
     color:#ffffff
 }
 
-.solid{
+.solid
+{
     border-top: 3px solid #555;
 }

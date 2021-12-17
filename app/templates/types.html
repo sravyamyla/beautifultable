@@ -4,344 +4,89 @@
 
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Types of Internet</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-        .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
-            background-color: grey;
-            color: white;
-            text-align: center;
-            line-height: 2.5;
-        }
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-    </style>
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
+    .topnav a.active {
+      background-color:gray;
+      color: white;
+    }
+    .history {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    .b1{
+      font-family: Georgia;
+      background: transparent;
+      text-decoration-color: lightslategray;
+    }
+    .history > h1 {
+      margin: 10px;
+      padding: 5px;
+      background-color:transparent;
+    }
 
+    header{
+      text-align: center;
+      color: #04AA6D;
+      width: 1500px;
+      height: 60px;
+
+    }
+
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: antiquewhite;
+      color: black;
+    }
+    .subHistory {
+      margin: 4px;
+      font-family: Georgia;
+      background: tan;
+      margin:5px;
+      padding:5px;
+    }
+  </style>
 </head>
-<body>
+<body style="background-color: thistle;">
+<header>
+  <h1 class="b1">How World Wide Web played an important role for people</h1>
+</header>
+<article class=subHistory>
+  <p class="b1"></p>
+</article>
+<article class="subHistory">
+  <ul>
+    <li><b>People</b></li>
+    <p>
+      The world wide web has changed the world where people play a very integral part. This is transformation is known as Web 2.0. It was termed Web 2.0 time when the World Wide Web sites emphasized user generated content and social networking. The Internet has changed society and new age entrepreneurs are shaping the world by making the web interactive. The communication was uprising all around us. New generation companies like YouTube and Facebook, turned the web into a two-way participatory and democratic medium controlled by no-one and shaped by everyone which is known as Web 2.0. Examples of Web 2.0 features includesocial networking sitesorsocial mediasites (e.g.,Facebook),blogs,wikis,folksonomies,video sharingsites (e.g.,YouTube),image sharingsites,hosted services,Web applications,collaborative consumption platforms, and mashup applications.
 
-<style>
-    .r-title{
-        margin-top: var(--rTitleMarginTop, 0) !important;
-        margin-bottom: var(--rTitleMarginBottom, 0) !important;
-    }
+    </p>
+  </ul>
 
-
-    p:not([class]){
-        line-height: var(--cssTypographyLineHeight, 1.78);
-        margin-top: var(--cssTypographyBasicMargin, 1em);
-        margin-bottom: 0;
-    }
-
-    p:not([class]):first-child{
-        margin-top: 0;
-    }
-
-    /*
-    text component
-    */
-
-    .text{
-        display: var(--textDisplay, inline-flex);
-        font-size: var(--textFontSize, 1rem);
-    }
-
-    /*
-    time component
-    */
-
-    /*
-    core styles
-    */
-
-    .time{
-        display: var(--timeDisplay, inline-flex);
-    }
-
-    /*
-    extensions
-    */
-
-    .time__month{
-        margin-left: var(--timelineMounthMarginLeft, .25em);
-    }
-
-    /*
-    skin
-    */
-
-    .time{
-        padding: var(--timePadding, .25rem 1.25rem .25rem);
-        background-color: var(--timeBackgroundColor, #f0f0f0);
-
-        font-size: var(--timeFontSize, .75rem);
-        font-weight: var(--timeFontWeight, 700);
-        text-transform: var(--timeTextTransform, uppercase);
-        color: var(--timeColor, currentColor);
-    }
-
-    /*
-    card component
-    */
-
-    /*
-    core styles
-    */
-
-    .card{
-        padding: var(--timelineCardPadding, 1.5rem 1.5rem 1.25rem);
-    }
-
-    .card__content{
-        margin-top: var(--cardContentMarginTop, .5rem);
-    }
-
-    /*
-    skin
-    */
-
-    .card{
-        border-radius: var(--timelineCardBorderRadius, 2px);
-        border-left: var(--timelineCardBorderLeftWidth, 3px) solid var(--timelineCardBorderLeftColor, var(--uiTimelineMainColor));
-        box-shadow: var(--timelineCardBoxShadow, 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24));
-        background-color: var(--timelineCardBackgroundColor, #fff);
-    }
-
-    /*
-    extensions
-    */
-
-    .card__title{
-        --rTitleMarginTop: var(--cardTitleMarginTop, 1rem);
-        font-size: var(--cardTitleFontSize, 1.25rem);
-    }
-
-    /*
-    =====
-    CORE STYLES
-    =====
-    */
-
-    .timeline{
-        display: var(--timelineDisplay, grid);
-        grid-row-gap: var(--timelineGroupsGap, 2rem);
-    }
-
-    /*
-    1. If timeline__year isn't displaed the gap between it and timeline__cards isn't displayed too
-    */
-
-    .timeline__year{
-        margin-bottom: 1.25rem; /* 1 */
-    }
-
-    .timeline__cards{
-        display: var(--timeloneCardsDisplay, grid);
-        grid-row-gap: var(--timeloneCardsGap, 1.5rem);
-    }
-
-
-    /*
-    =====
-    SKIN
-    =====
-    */
-
-    .timeline{
-        --uiTimelineMainColor: var(--timelineMainColor, #222);
-        --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
-
-        border-left: var(--timelineLineWidth, 3px) solid var(--timelineLineBackgroundColor, var(--uiTimelineMainColor));
-        padding-top: 1rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .timeline__year{
-        --timePadding: var(--timelineYearPadding, .5rem);
-        --timeColor: var(--uiTimelineSecondaryColor);
-        --timeBackgroundColor: var(--uiTimelineMainColor);
-        --timeFontWeight: var(--timelineYearFontWeight, 400);
-    }
-
-    .timeline__card{
-        position: relative;
-        margin-left: var(--timelineCardLineGap, 1rem);
-    }
-
-    /*
-    1. Stoping cut box shadow
-    */
-
-    .timeline__cards{
-        overflow: hidden;
-        padding-top: .25rem; /* 1 */
-        padding-bottom: .25rem; /* 1 */
-    }
-
-    .timeline__card::before{
-        content: "";
-        width: 100%;
-        height: var(--timelineCardLineWidth, 2px);
-        background-color: var(--timelineCardLineBackgroundColor, var(--uiTimelineMainColor));
-
-        position: absolute;
-        top: var(--timelineCardLineTop, 1rem);
-        left: -50%;
-        z-index: -1;
-    }
-
-    /*
-    =====
-    SETTINGS
-    =====
-    */
-    /**/
-    .timeline{
-        --timelineMainColor: #4557bb;
-    }
-
-    /*
-    =====
-    DEMO
-    =====
-    */
-
-    body{
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-        color: #222;
-
-        background-color: #f0f0f0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    p{
-        margin-top: 0;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-    }
-
-    p:last-child{
-        margin-bottom: 0;
-    }
-
-    .page{
-        max-width: 47rem;
-        padding: 5rem 2rem 3rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
-<div class="container">
-    <div class="page">
-        <h1 class="display-5" >Types of Internet</h1>
-        <div class="timeline">
-            <div class="timeline__group">
-                <span class="timeline__year time" aria-hidden="true">MOBILE</span>
-                <div class="timeline__cards">
-                    <div class="timeline__card card">
-                        <header class="card__header">
-
-                        </header>
-                        <div class="card__content">
-                            <p>This is the basic connection we use in today’s world. Many cell phone and smartphone network providers offer voice plans with Internet access. Mobile Internet connections provide good speeds and allow you to access the Internet based on the plan.</p>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">WIFI HOTSPOTS</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-
-                                <div class="card__content">
-                                    <p>WiFi Hotspots are sites that offer Internet access over a wireless local area network (WLAN) by way of a router that then connects to an Internet service provider. Hotspots utilize WiFi technology, which allows electronic devices to connect to the Internet or exchange data wirelessly through radio waves. Hotspots can be phone-based or free-standing, commercial or free to the public.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">DIAL-UP</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-
-                                <div class="card__content">
-                                    <p>Dial-up connections require users to link their phone line to a computer in order to access the Internet. This type of connection is also referred to as analog which does not permit users to make or receive phone calls through their home phone service while using the Internet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">BROADBAND</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-                                <header class="card__header">
-
-                                </header>
-                                <div class="card__content">
-                                    <p>This high-speed Internet connection is provided through either cable or telephone companies. One of the fastest options available, broadband Internet uses multiple data channels to send large quantities of information. Broadband Internet connections such as DSL and cable are considered high-bandwidth connections. Although many DSL connections can be considered broadband, not all broadband connections are DSL.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">CABLE</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-
-                                <div class="card__content">
-                                    <p>Cable Internet connection is a form of broadband access. Through use of a cable modem, users can access the Internet over cable TV lines. Cable modems can provide extremely fast access to the internet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">DSL</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-                                <div class="card__content">
-                                    <p>Digital Subscriber Line uses existing 2 wire copper telephone line connected to one's home, so service is delivered at the same time as landline telephone service. Customers can still place calls while surfing the Internet.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">SATELLITE</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-                                <header class="card__header">
-
-                                </header>
-                                <div class="card__content">
-                                    <p>In certain areas where broadband connection is not yet offered, a satellite Internet option may be available. Like wireless access, satellite connection utilizes a modem.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__group">
-                        <span class="timeline__year time" aria-hidden="true">ISDN</span>
-                        <div class="timeline__cards">
-                            <div class="timeline__card card">
-                                <div class="card__content">
-                                    <p>Integrated Services Digital Network allows users to send data, voice and video content over digital telephone lines or standard telephone wires. Installation of an ISDN adapter is required.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 </body>
 </html>
 
-{% endblock %}
 
+{% endblock %}
