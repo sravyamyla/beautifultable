@@ -1,55 +1,34 @@
-{% extends "base.html" %}
-{% block title %}Index{% endblock %}
-{% block content %}
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-    </style>
-    <title>Document</title>
-
-<p> <h1> <b> ARTICLE 1 </b></h1></p>
-<p> Object-oriented programming (OOP) is a programming paradigm for structuring programs so that properties and behaviors are clustered into one individual objects. An object could, for instance, represent a person with properties like name, age, and address. Walking, talking, breathing, and running are examples of behaviors. It can also be a message in an email features such as a recipient list, subject, and message, as well as activities like as attaching files and sending. Procedural programming is another common programming paradigm that structures a program. It's similar to a recipe in that it gives you a set of steps to follow in the form of functions and code blocks. in order to accomplish a work consecutively The main lesson is that objects are at the heart of Python's object-oriented programming as in procedural programming, but in the overall structure of the program as in object-oriented programming well.</p>
-<p> Object-oriented programming (OOPs) is a programming paradigm in Python that employs objects and classes. Its goal is to use programming to create real-world concepts like inheritance, polymorphisms, and encapsulation. The primary idea behind OOPs is to combine data and the functions that operate with it into a single unit such that no other parts of the code may access it.
-In comparison to other design patterns, object-oriented programming provides a few advantages. Software maintainability is improved, and development is faster and less expensive. As a result, higher-quality software is produced, which may also be extended with new methods and properties. The learning curve, on the other hand, is steeper. Beginners may find the notion too difficult to grasp. OOP software is slower and utilizes more memory in terms of computation since more lines of code must be written.
-</p>
-<p> The imperative programming paradigm, which utilizes statements to change a program's state, is the foundation of object-oriented programming. It is mostly concerned with explaining how a software should function. C, C++, Java, Go, Ruby, and Python are examples of imperative programming languages. Declarative programming, on the other hand, concentrates on what the computer program should do rather than how it should do it. Database query languages such as SQL and XQuery are examples of this, where the user not only instructs the machine what data to query from where, but also how to do it.
-</p>
-<p>It is a static code analysis tool that helps programmers spot flaws in Python code and enforce good coding style. They can use this tool to troubleshoot complex programs with minimal human effort. It's one of the tools that's utilized in the test-driven development process (TDD). PEP8 is the coding style that Pylint uses to clean up the code. PEP8 Style Guide for Python is a good place to start if you want to learn more about it. Pyflakes, mypy, and other related products are similar to Pylint. It's a must-have tool for both beginners and advanced users, as it scans and scores programs using the PEP8 Style Guide's principles. To install pylint we have to use <b> pip install pylint </b> command.</p>
-<p> Glossary:</p>
-<p> <b>Factory</b>: A factory is an object in object-oriented programming (OOP) which generates other objects. A factory, in precise terms, is a function or method that returns objects of variable prototypes or classes from a method call that is considered to be "new."
-</p>
-<p> <b>Instantiation</b>: Whenever you instantiate a class, you're creating a replica of it with all the class's variables and methods. In Python, creating a class is simple. To instantiate a class, we simply call it like a function and give the arguments defined by the _init_ method.
-</p>
-<p> <b>Object</b>: A Class's instance is an Object. A class is comparable to a blueprint, while an instance is a clone of the class that contains actual data. Python is an object-oriented programming language that focuses on objects, rather than functions.
-</p>
-<p> <b>Class</b>: A logical grouping of functions and data is known to as a "class." All the standard features of Object Oriented Programming are accessible in the Python class. In Python, a subclass or heir class can inherit attributes and behavior methods from another class.
-</p>
-<p> <b>Namespace </b>: A namespace is a set of currently defined symbolic names which also includes information about the item that each name refers to. A namespace can be compared to a dictionary, with the keys being the object names and the values being the objects themselves.
-</p>
-<p> <b>Constructor</b>: Constructors are frequently employed to create new objects. Constructors are accountable for initializing (assigning values) the data members of a class when an object is formed. The constructor in Python is called the _init_() method, and it is invoked whenever an object is created.
-</p>
-<p> <b>Fixture</b>: The steps and data that make up the arrange phase of a test are defined by fixtures. They are functions you define in pytest that serve this purpose. They can also be used to define the act phase of a test, which is a useful technique for creating more complicated tests.
-</p>
-<p> <b>Type hint</b>: Type hinting is a formal technique for indicating the type of value in Python code statically.
-</p>
-<p> <b>Type cast</b>: Type casting is a technique for converting variables/values declared in one data type to a different data type in order for the code snippet to conduct the action necessary. This feature can be achieved in Python by using constructor functions such as int(), string(), float(), and so on.
-</p>
-<p> <b>Unit test</b>: Python's unit test framework is called unit test, and it comes pre-installed with the language. Since you foresee the instances where your code can fail or produce a bug, unit testing makes your code future proof. Even if you can't predict every situation, you can still deal with the majority of them.
-</p>
-<p> <b>Static</b>: Static variables and static methods are common programming concepts in languages like C++, PHP, Java, and others. The class and the objects are accountable for these variables and methods. We'll learn how to construct static variables and methods in Python in this section.
-</p>
-<p> <b>Class method</b>: A class method is a method that is linked to the class rather than the class's object. They have access to the class's state since the class parameter relates to the class instead of the object instance. It has the capacity to modify the status of a class.</p>
-<p> <b>Façade</b>: Facade is a structural design pattern that provides a complex set of classes, library, or framework a simplified (but limited) interface. While Facade significantly reduces complexity of the program, it also aids in the aggregation of unnecessary dependencies</p>
-<p> <b>Design patterns used</b>: Design Patterns are the most important part of Software Engineering because they provide a general, repeatable solution to a common software design problem. They usually reflect several of the most effective techniques used by experienced object-oriented software engineers.
-</p>
-<p> <b>Method</b>: An object's method is a function that "belongs to" it. (The term "method" is not limited to class instances in Python; other object types can also have methods.) List objects, for example, have methods like append, insert, remove, sort, and so on.</p>
-<p> <b>Property</b>: In various object-oriented programming languages, a property is a type of class member that sits halfway between a field (or data member) and a method in terms of capability.</p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>ARTICLE 1</title>
 
 
-{% endblock %}
+</head>
+<body>
+<div class="container">
+    <p>
+        <p>Here’s a basic unit test for Python’s absolute value function:</p>
+<p>	def test_abs_for_a_negative_number():</p>
+<p># Arrange</p>
+<p>negative = -5 </p>
+<p># Act </p>
+<p>answer = abs(negative)</p>
+<p># Assert</p>
+<p>assert answer == 5</p>
+        <p>The qualities or attributes of an object are referred to as its properties. Although this test appears to be insignificant, we may use it to highlight our pattern. In addition, I like to include comments in the test case that describe each aspect of the test case.
+</p>
+           <p> 1.During the Arrange step, a variable named "negative" is created for testing purposes.</p>
+<p>2.Using the "negative" variable, the Act step invokes the "abs" function, which returns a result that is stored in a variable named "answer."</p>
+<p>3.The Assert step checks to see if the value of "answer" is a positive one.</p>
+<p>What is the significance of testing?</p>
+<p>It clearly distinguishes between what is being tested and the stages involved in the setup and verification.
+Clarifies and concentrates attention on a set of test steps that has proven to be historically successful and generally essential.
+Some TestSmells become more noticeable as a result of this:
+Assertions are interspersed with code from the "Act."
+Methods of testing that attempt to test too many different things at the same time.</p>
+</p>
+</div>

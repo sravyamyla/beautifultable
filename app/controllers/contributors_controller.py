@@ -4,4 +4,4 @@ from flask import render_template
 class contributorscontroller(ControllerBase):
     @staticmethod
     def get():
-        return render_template('contributors.html')
+        return render_template('icann.html')

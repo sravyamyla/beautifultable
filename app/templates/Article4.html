@@ -1,57 +1,31 @@
-{% extends "base.html" %}
-{% block title %}Index{% endblock %}
-{% block content %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>ARTICLE 2</title>
 
-    </style>
-    <title>Document</title>
 </head>
 <body>
-
-<p> <h1> <b> ARTICLE 3 </b> </h1> </p>
-<p> POLYMORPHISM </p>
-<p> Polymorphism is the ability to take on multiple identities. In Python, polymorphism allows us to define methods in a child class that have the same name as those in the parent class. A child class inherits all of the parent class's methods. However, in some cases, the parent class's inherited function does not fully fit within the child class. You'll have to re-implement the method in the child class in such circumstances. Polymorphism can be used in Python in a variety of ways. Polymorphism can be defined using a variety of functions, class methods, and objects. So, let's take a closer look at each of these strategies individually. In the same way, Python uses two separate class types. You must design a for loop that iterates through a tuple of items in this case. After that, you must call the methods without regard for the class type of each object. In Python, polymorphism defines methods in the child class that have the same name as the parent class's methods. In inheritance, the methods of the parent class are passed down to the child class. It's also feasible to change a method that a child class has inherited from its parent.
-This is typically used when a method inherited from the parent class isn't appropriate for the child class. Method Overriding is the process of re-implementing a method in a child class.
-In our calculator application, we have a class called Calculator that has five methods with a pre-fixed outcome of 0 and four distinct variables in four separate methods that will provide the necessary output.
+<div class="container">
+    <p>
+       SOLID is an acronym for the first five principles of Robert C. Martin's paper Principles of Object-Oriented Design, which is an acronym for Solid Object-Oriented Design.
+    </p>
+    <p> The application of these principles contributes to the development of maintainable and expandable code. They also aid in the detection of code smells, the ease with which code may be refactored, and the practice of good agile development.  </p>
+    <p> SRP (Single Responsibility Principle) is represented by the letter S.
+The letter O stands for the Open-Closed Principle (OCP).
+LSP (Liskov Substitution Principle) is represented by the letter L.
+The letter I stands for Interface Segregation Principle (also known as ISP).
+DIP is an abbreviation for Dependency Inversion Principle. </p>
+    <p> OCPD - Open-Closed Designation Principle
+The ability to easily increase the functionality of our software entities without the need to change the entity itself is a desirable attribute for our software entities. </p>
+    <p> LSP is an abbreviation for the Liskov Substitution Principle.
+What this principle indicates is that objects in a program should be interchangeable with instances of their subtypes without affecting the correctness of the program as a result of this substitution. When passing an abstraction subclass through, you must ensure that you do not change any of the behavior or state semantics of the parent abstraction. </p>
+    <p> The Interface Segregation Principle (ISP) is an important concept in computer networking.
+The goal is to keep interfaces as short as possible so that clients aren't obliged to implement methods that they don't really need or want.
 </p>
-<p> Class Calculator: <br> def get_result(self): <br> return self.result <br> def add_number(self, value_a): <br>
-self.result = self.result+value_a <br> return self.result</p>
-<p> In the calculator program the method add has a prefixed result 0 and it performs the addition function to give the desired output. Same applies to the different methods with the different variabls which will give the desired output.</p>
-<p> ENCAPSULATION</p>
-<p>In Python, encapsulation refers to the principle of grouping data and methods into a single unit. When you construct a class, for instance, you are implementing encapsulation. Encapsulation is demonstrated by a class, which binds all data members (instance variables) and methods into a single unit. Encapsulation also allows us to create private data members and methods within a class to restrict direct access to variables and methods and prevent unintentional data alteration.
-Encapsulation is a technique for limiting outside access to a class's methods and variables. Providing access to all variables utilized within the class is not a good idea whenever we are working with the class and dealing with sensitive data. Encapsulation is accomplished by defining a class's data members and methods as private or protected. However, direct access modifiers such as public, private, and protected do not exist in Python. We may accomplish this by employing single and double underscores. Access modifiers restrict access to a class's variables and methods. Private, public, and protected are the three types of access modifiers available in Python. Member of the Public: Outside of class, it's accessible from anyplace. Accessible only to members of the class is private. Accessible within the class and its sub-classes as a protected member.
-It discusses the concept of data wrapping and the methods that operate with data as a single unit. This prevents data from being accidentally modified by restricting direct access to variables and methods. An object's variable can only be altered by an object's method to prevent unintentional changes. These variables are referred to as private variables. The variable result is declared in the function with the object self and is made private in the program.
-</p>
-<p> class calculation: <br> def_init_(self, value_a, value_b): <br> self._value_a=value_a <br> self._value_b = value_b <br>
-def create (cls, value_a, value_b): <br> def value_a(self): <br> return self._value_a <br> def value_b(self): <br> return self._value_b </p>
-<p> ABSTRACTION </p>
-<p> Abstraction is a technique for concealing a function's internal functionality from its users. Users only interact with the function's basic implementation; the inner workings are hidden. The user understands "what the function does," but not "how it works." Abstract classes and interfaces are used to accomplish abstraction in Python.
-The abstract class is a type of class that contains one or more abstract methods. The implementation of abstract methods is not included. Subclasses can inherit abstract classes, and abstract methods are defined in the subclass. Abstraction classes serve as a model for additional classes. When developing large functions, an abstract class can be handy. An abstract class can also be useful for providing a consistent interface for multiple component implementations. The abc module in Python allows you to employ abstraction in your Python program. An abstract base class is the interface's common application program for a group of subclasses. It can be used by a third party to offer implementations, such as using plugins. It's particularly useful when working with a huge code base when remembering all the classes is difficult. Abstraction is a technique for concealing a function's internal functionality from its users. Users only interact with the function's basic implementation; the inner workings are hidden.
-The results of the variables of classes addition, subtraction, multiplication, and division are obtained from the variables used in class computation in the calculator software.
-</p>
-<p> class addition(calculation): <br> def get_result(self): <br> return self.value_a + self.value_b</p>
-<p> In the caluclator program the result of the variables of class addition is derived from the variables used in class calculation. Same applies to subtraction, division and multiplication</p>
-<p> INHERITANCE </p>
-<p> If inheritance wasn't supported, no object-oriented programming language would be worth looking at or using. Simula came up with the concept of inheritance in 1969. Python not only allows for inheritance, but also multiple inheritance. In general, inheritance refers to the process of creating new classes from existing ones. As a result, we have a hierarchy of classes. In most class-based object-oriented languages, an object generated through inheritance (a "child object") inherits all of the parent object's characteristics and actions, with certain exceptions in some computer languages.
-Inheritance allows programmers to construct classes that are based on other classes, allowing a class created through inheritance to inherit the parent class's attributes and methods. As a result, inheritance facilitates code reuse. A subclass's inherited methods, or software in general, are regarded to be reused in the subclass. A directed graph is formed by the inheritance of relationships between items or classes.
-The parent or superclass of a class is the class from which it inherits. A subclass, also known as an heir class or a kid class, is a class that inherits from a superclass. Superclasses are also referred to as ancestors. Between classes, there is a hierarchical relationship. It's akin to the relationships and categorizations we're familiar with in real life. Take, for example, automobiles. Vehicles include bicycles, automobiles, buses, and trucks. Pickup trucks, vans, sports cars, convertibles, and estate cars are all automobiles that are also vehicles. In Python, we may create a car class with methods such as accelerate and brake. Cars, buses, trucks, and bikes can all be constructed as subclasses of vehicle, inheriting these methods.
-As a result of inheritance, a class calculator has methods such as add number, subtract number, multiply number, and divide number, which are represented by the classes addition, subtraction, multiplication, and division.This indicates that the subclasses of the class calculator are addition, subtraction, multiplication, and division.
-</p>
-<p> Class Calculator: <br> def get_result(self): <br> return self.result <br> def add_number(self, value_a): <br>
-self.result = self.result+value_a <br> return self.result</p>
-<p> In the class calculator the method to add a number is depicted from the class addition, which implies the clas addition is the subclass
-of the class calculator. The same applies to subtraction, multiplication and division</p>
+    <p> DIP is an abbreviation for Dependency Inversion Principle.
+When it boils down to it, this principle says that high-level modules should not rely on low-level modules, but should instead rely on abstractions. This principle makes it possible to decouple.</p>
+</div>
 
-
-</body>
-</html>
-
-{% endblock %}
