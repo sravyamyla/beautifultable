@@ -1,13 +1,14 @@
 
 <html lang="en">
 <head>
-    <!-- Required tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     {% block head %}
     <link href="{{ url_for('static', filename='css/mystyle.css') }}" rel="stylesheet"/>
     <title>{% block title %}{% endblock %} - My Webpage</title>
     {% endblock %}
+    <!-- Bootstrap CSS -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -16,7 +17,7 @@
 <body>
 <div id="primary_container">
     <nav class="navbar container-fluid navbar-expand-lg navbar-toggle bg-dark">
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Project 3</a>
         <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
                 data-target="#navbarNav" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -25,10 +26,10 @@
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="navbar-brand" href="/basicform">Calculator</a>
-                    <a class="navbar-brand" href="/internet">Internet</a>
-                    <a class="navbar-brand" href="/Arpanet">Arpanet</a>
-                    <a class="navbar-brand" href="/Article1">AAA Testing</a>
-                    <a class="navbar-brand" href="/Article4">OOPS</a>
+                    <a class="navbar-brand" href="/inventors">Internet</a>
+                    <a class="navbar-brand" href="/contributors">Index</a>
+                    <a class="navbar-brand" href="/Article1">OOPS</a>
+                    <a class="navbar-brand" href="/Article4">OOPS Glossary</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +41,7 @@
         <div class="alert alert-warning alert-dismissible" role="alert">
             {{ message }}
             <a aria-label="close" class="close" data-dismiss="alert" href="#"><span
-                    style="float:right">&times</span></a>
+                    style="float:right">&times;</span></a>
         </div>
         {% endfor %}
         {% endif %}
@@ -49,35 +50,30 @@
             {% block content %}{% endblock %}
         </div>
     </div>
-    </br>
-    <div id="footer">
-        {% block footer %}
-        <footer class="sticky-footer bg-dark container-fluid mt-auto">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+<div id="footer">
+    {% block footer %}
+    <footer class="sticky-footer bg-dark container-fluid mt-auto">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12 col-xs-12">
 
-                        <p class="text-white"><small>&copy copyright - Jahnavi Thotapalli</small></p>
-                        <a href="https://github.com/Janut1998/project-3"> GitHub Link</a>
-                        {% endblock %}
-                    </div>
+                    <p class="text-white"><small>&copy; copyright, Ishan Tyagi </small></p>
+                    <a href="https://github.com/isty1991/project3"> GitHub</a> <img
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+        {% endblock %}
+    </footer>
+</div>
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
 <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

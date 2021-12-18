@@ -1,104 +1,62 @@
 {% extends "base.html" %}
 {% block title %}Index{% endblock %}
 {% block content %}
-<html lang="">
+
+<html lang="en">
 <head>
-    <title>TIPS AND TRICKS FOR BEGINNERS TO LEARN PYTHON PROGRAMMING</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet", href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OOPs Glossary Part2</title>
 </head>
-<body style="background-color: #f2f2a2 !important;">
+    <body>
+    <header class="main-header">
 
-<header>
+        <h1 class="Title Title-Large">OOP Glossary_2</h1>
+    </header>
+    <section class="content-section">
+        <h2 class="section-header">Fixture</h2>
+        <p>In testing, a fixture provides a defined, reliable and consistent context for the tests. This could include environment
+            (for example a database configured with known parameters) or content (such as a dataset). Fixtures define the steps and
+            data that constitute the arrangement phase of a test (see Anatomy of a test). In pytest, they are functions you define that serve this purpose. They can also be used to define a test’s act phase; this is a powerful technique for designing more complex tests.
+            The services, state, or other operating environments set up by fixtures are accessed by test functions through arguments.
+            For each fixture used by a test function there is typically a parameter (named after the fixture) in the test function’s
+            definition. Ex pytest.fixture, clear_history is one method which is passed as reference to other test methods of the
+            calculator_test class for performing clear history operation after every calculator test method.</p>
+    </section>
 
-    <h1 class="b1">AAA TESTING</h1>
-</header>
-
-<article class=OOPS>
-    <p>
-        The Arrange Act Assert also AAA and 3A pattern of testing was observed and named by Bill Wake in 2001. I first came across it in Kent Beck book Test Driven Development: By Example and I spoke about it at PyConUK 2016.
-        The pattern focuses each test on a single action. The advantage of this focus is that it clearly separates the arrangement of the System Under Test SUT and the assertions that are made on it after the action.
-        On multiple projects I have worked on I have experienced organised and clean code in the main codebase, but disorganisation and inconsistency in the test suite. However when AAA is applied, I have found it helps by unifying and clarifying the structure of tests which helps make the test suite much more understandable and manageable. </p>
-</article>
-<article class="subHistory">
-    <ul>
-        <p><b>The definition of the test function. </b></p>
-        <p>EXAMPLE:</p>
-        <p>GUIDELINES</p>
-        <p>
-            Name your function something descriptive because the function name will be shown when the test fails in Pytest output.
-            Good test method names can make docstrings redundant in simple tests (thanks Adam!).</p>
-    </ul>
-
-</article>
-<article class="subHistory">
-    <ul>
-        <p><b>DOC STRING:</b></p>
-        <p>An optional short single line statement about the behaviour under test. </p>
-        <p>EXAMPLE:</p>
-        <p>GUIDELINES</p>
-        <p>
-            Docstrings are not part of the AAA pattern. Consider if your test needs one or if you are best to omit it for simplicity.
-            If you do include a docstring, then I recommend that you:
-            Keep the language positive - state clearly what the expected behaviour is. Positive docstrings read similar to:
-            X does Y when Z
-            Or
-            Given Z, then X does Y
-            Be cautious when using any uncertain language in the docstring and follow the mantra Explicit is better than implicit (PEP20)
-            Words like should and if introduce uncertainty. For example:
-            X should do Y if Z
-            In this case the reader could be left with questions. Is X doing it right at the moment? Is this a TODO note? Is this a test for an expected failure?
-            In a similar vein, avoid future case.
-            X will do Y when Z
-            Again, this reads like a TO DO.</p>
-    </ul>
-</article>
-<article class="SubHistory">
-    <ul>
-        <p><b>ARRANGE:</p></b>
-        <p>The block of code that sets up the conditions for the test action.</p>
-        <p>EXAMPLE:</p>
-        <p>GUIDELINES</p>
-        <p>
-            Use a single block of code with no empty lines.
-            Do not use assert in the Arrange block. If you need to make an assertion about your arrangement, then this is a smell that your arrangement is too complicated and should be extracted to a fixture or setup function and tested in its own right.
-            Only prepare non-deterministic results not available after action.
-            The arrange section should not require comments. If you have a large arrangement in your tests which is complex enough to require detailed comments then consider:
-            Extracting the comments into a multi-line docstring.
-            Extracting the arrangement code into a fixture and testing that the fixture is establishing the expected conditions as previously mentioned.</p>
-    </ul>
-
-</article>
-<article class="subHistory">
-    <ul>
-        <p><b>ACT:</b></p>
-        <p>The line of code where the Action is taken on the SUT.</p>
-        <p>EXAMPLE:</p>
-        <p>GUIDELINES</p>
-        <p>
-            Start every Action line with result =.
-            This makes it easier to distinguish test actions and means you can avoid the hardest job in programming: naming. When every result is called result, then you do not need to waste brain power wondering if it should be item = or response = etc. An added benefit is that you can find test actions easily with a tool like grep.
-            Even when there is no result from the action, capture it with result = and then assert result is None. In this way, the SUT behaviour is pinned.
-            If you struggle to write a single line action, then consider extracting some of that code into your arrangement.
-            The action can be wrapped in with  raises for expected exceptions. In this case your action will be two lines surrounded by empty lines.</p>
-    </ul>
-
-</article>
-<article class="SubHistory">
-    <ul>
-        <p><b>ASSERT:</b></p>
-        <p>The block of code that performs the assertions on the state of the SUT after the action.</p>
-        <p>EXAMPLE:</p>
-        <p>GUIDELINES</p>
-        <p>
-            Use a single block of code with no empty lines.
-            First test result, then side effects.
-            Limit the actions that you make in this block. Ideally, no actions should happen, but that is not always possible.
-            Use simple blocks of assertions. If you find that you are repeatedly writing the same code to extract information from the SUT and perform assertions on it, then consider extracting an assertion helper.
-            The final test</p>
-    </ul>
-
-</article>
-
-</body>
+    <section class="content-section">
+        <h2 class="section-header">Methods</h2>
+        <p>Static methods in Python are extremely similar to python class level methods, the difference being
+            that a static method is bound to a class rather than the objects for that class. This means that a static method can be
+            called without an object for that class. This also means that static methods cannot modify the state of an object as they
+            are not bound to it. def get_history(), def get_result_of_first_calculation(), def clear_history() are few such examples of
+            the static methods for the class.</p>
+        <p>A class method is a method which is bound to the class and not the object of the class. They have the access to the state of
+            the class as it takes a class parameter that points to the class and not the object instance. It can modify a class state that
+            would apply across all the instances of the class. For example, it can modify a class variable that would be applicable to all
+            the instances. Addition, subtraction and Multiplication classes may be one such examples of it.</p>
+        <p>A class is a user-defined blueprint or prototype from which objects are created. Classes provide a means of bundling data and
+            functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made.
+            Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods
+            (defined by its class) for modifying its state. def __init__(self, value_a, value_b) may be one such example of the instance
+            methods</p>
+    </section>
+    <section class="content-section">
+        <h2 class="section-header">Design Patterns</h2>
+        <p>Design Patterns is the most essential part of Software
+            Engineering, as they provide the general repeatable solution to a commonly occurring problem in software design.
+            Ex: Facade Method is a Structural Design pattern that provides a simpler unified interface to a more complex system.
+            The word Facade means the face of a building or particularly an outer lying interface of a complex system, consists of
+            several sub-systems.</p>
+    </section>
+    <section class="content-section">
+    <h2 class="section-header">Property Function</h2>
+    <p>Python property() function returns the object of the property class, and it is used to create property of a class.
+        A property may be defined using key word such as @staticmethod for defining the scope of the class as well as the value being
+        returned.</p>
+    </section>
+    </body>
 </html>
-
+</br>
 {% endblock %}
