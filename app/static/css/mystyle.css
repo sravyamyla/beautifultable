@@ -44,9 +44,29 @@ div#content.container-fluid
 .nav-link{
     color: #00dd00 !important;
 }
+div#content.container-fluid
+{
+    background-color: #f2f2a2;
 
+}
+ul{
+background-color: #ddffdd;
+}
+li.nav-item
+{
+    background-color: #212529;
+}
+li,h1
+{
+    text-align: left;
+}
 .navbar-fixed-top{
     background-color: #eee;
+}
+
+p.b2
+{
+    background-color: #888888 !important;
 }
 
 @media (max-width: 991px) {
@@ -200,6 +220,15 @@ article.subHistory
 .heading3{
     text-align: center;
 
+}
+
+a.btn.btn-outline-primary.tm-btn
+{
+    color: black !important;
+    background-color: white;
+}
+b{
+    color: mediumseagreen;
 }
 
 /*Arpa2Internet*/

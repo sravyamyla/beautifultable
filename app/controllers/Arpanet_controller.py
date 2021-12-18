@@ -1,7 +1,8 @@
 from app.controllers.controller import ControllerBase
 from flask import render_template
 
-class contributorscontroller(ControllerBase):
+
+class Arpanetcontroller(ControllerBase):
     @staticmethod
     def get():
-        return render_template('icann.html')
+        return render_template("Arpanet.html")

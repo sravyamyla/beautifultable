@@ -5,8 +5,8 @@ from app.controllers.calculator_controller import CalculatorController
 from app.controllers.Article1_controller import Article1controller
 from app.controllers.Article4_controller import Article4controller
 from app.controllers.types_controller import typescontroller
-from app.controllers.contributors_controller import contributorscontroller
-from app.controllers.inventors_controller import inventorscontroller
+from app.controllers.internet_controller import internetcontroller
+from app.controllers.Arpanet_controller import Arpanetcontroller
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -27,9 +27,9 @@ def calculator_post():
 def types_get():
     return typescontroller.get()
 
-@app.route("/contributors", methods=['GET'])
+@app.route("/internet", methods=['GET'])
 def contributors_get():
-    return contributorscontroller.get()
+    return internetcontroller.get()
 
 @app.route("/Article1", methods=['GET'])
 def Article1_get():
@@ -39,6 +39,6 @@ def Article1_get():
 def Article4_get():
     return Article4controller.get()
 
-@app.route("/inventors", methods=['GET'])
+@app.route("/Arpanet", methods=['GET'])
 def inventors_get():
-    return inventorscontroller.get()
+    return Arpanetcontroller.get()

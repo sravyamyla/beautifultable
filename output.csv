@@ -1,9 +1,6 @@
 Value1,Value2,Operation,Result
-2,1,addition,3.0
-8,4,subtraction,4.0
-2,4,multiplication,8.0
-6,3,division,2.0
-1,2,addition,3.0
-3,1,subtraction,2.0
-8,4,multiplication,32.0
-8,2,division,4.0
+
+123,45,addition,168.0
+12,56,addition,68.0
+34,67,subtraction,-33.0
+67,8,division,8.375
