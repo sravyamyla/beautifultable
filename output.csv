@@ -6,3 +6,5 @@ Value1,Value2,Operation,Result
 10,12,addition,22.0
 12,45,multiplication,540.0
 12,45,multiplication,540.0
+12,355,multiplication,4260.0
+0,12,division,0.0
