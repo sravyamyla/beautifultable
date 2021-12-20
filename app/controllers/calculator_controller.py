@@ -19,15 +19,21 @@ class CalculatorController(ControllerBase):
             flash('Please enter valid input for Value 1 field')
         elif request.form['value2'] == '':
             flash('Please enter valid input for Value 2 field')
+        elif request.form['value2'] == '0' and operation == 'division':
+            flash('Cannot divide by zero !!!')
         else:
-            flash('Calculation is done successfully !!!!')
-
+            flash(operation.capitalize() + ' Calculation is done successfully !!!!')
             # make the tuple
             my_tuple = (value1, value2)
             # this will call the correct operation
             getattr(Calculator, operation)(my_tuple)
             result = str(Calculator.get_last_result_value())
 
+            # make the tuple
+            my_tuple = (value1, value2)
+            # this will call the correct operation
+            getattr(Calculator, operation)(my_tuple)
+            result = str(Calculator.get_last_result_value())
 
             # write to csv
             calculations = {'Value1': [value1], 'Value2': [value2], 'Operation': [operation], 'Result': [result]}
