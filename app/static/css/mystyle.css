@@ -1,7 +1,10 @@
 navbar-brand>img {
     height: 85%;
 }
-
+h1.b1,h1
+{
+    background-color: #888888 !important;
+}
 .navbar{
     margin : 0 !important;
     font-size:120%;
